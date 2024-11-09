@@ -1,1 +1,1 @@
-# DD-DDIM-inversion
+# DDIM_inversion
