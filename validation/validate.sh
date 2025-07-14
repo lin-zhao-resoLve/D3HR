@@ -1,0 +1,6 @@
+# CUDA_VISIBLE_DEVICES=0 python validation/validate_fiveteacher.py --nclass 1000 --subset imagenet_1k --arch-name resnet18 --stud-name resnet101 --repeat 5 --txt_file '/scratch/zhao.lin1/imagenet1k_256_4.0classfree_start_step_18_ddim_inversion_100_min_images_resize224/train.txt' --mapping_file "/home/zhao.lin1/DD-DDIM-inversion/ds_inf/imagenet-1k/imagenet_1k_mapping.json" --val_txt_file "/home/zhao.lin1/CONCORD/val.txt"
+
+# CUDA_VISIBLE_DEVICES=1 python validation/validate.py --nclass 200 --arch-name resnet18_modified --subset tinyimagenet --stud-name resnet18_modified --repeat 5 --txt_file '/scratch/zhao.lin1/tinyimagenet_finetune_start_step_18_ddim_inversion_10_min_images_m1000/train.txt'
+# CUDA_VISIBLE_DEVICES=0 python validation/validate.py --arch-name conv3 --subset cifar10 --stud-name conv3 --repeat 5 --txt_file '/scratch/zhao.lin1/cifar10_start_step_18_ddim_inversion_1_min_images/train.txt'
+CUDA_VISIBLE_DEVICES=1 python validation/validate.py --nclass 1000 --arch-name resnet18 --subset imagenet_1k --stud-name resnet18 --repeat 5 --txt_file '/scratch/zhao.lin1/imagenet1k_256_4.0classfree_start_step_18_ddim_inversion_10_min_images/train.txt' --mapping_file "ds_inf/imagenet_1k_mapping.json"
+# CUDA_VISIBLE_DEVICES=1 python validation/validate_hardlabel.py --nclass 1000 --arch-name resnet18 --subset imagewoof --stud-name resnet18 --repeat 5' 
