@@ -225,7 +225,7 @@ elif args.subset == "imagewoof":
 elif args.subset == "cifar10":
     args.nclass = 10
     args.classes = range(args.nclass)
-    args.val_ipc = 1000
+    args.val_ipc = 100
     args.input_size = 32
     args.epochs = 400
 
