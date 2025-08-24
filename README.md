@@ -76,7 +76,7 @@ sh generation/group_sampling.sh
 ```bash
 sh validation/validate.sh
 ```
-Note: The .sh script includes several configuration options—select the one that best fits your needs.
+Note: The .sh script includes several configuration options—select the one that best fits your needs. For CIFAR-10, CIFAR-100, and tinyimagenet, you need first download the pretrained teacher weights from ([RDED](https://github.com/LINs-lab/RDED?tab=readme-ov-file)) and place them in the pretrain_models folder.
 
 ## Acknowledgement
 This project is mainly developed based on:
