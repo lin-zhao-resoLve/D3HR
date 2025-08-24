@@ -128,7 +128,11 @@ def train(args, train_dataset, train_loader, val_loader):
         # else:
         #     top1 = 0
 
-        if epoch > 290:
+        if args.subset == 'tinyimagenet' or args.subset == 'imagenet_1k':
+            epoch_num = 290
+        else:
+            epoch_num = 390
+        if epoch > epoch_num:
                 top1 = validate(student_model, args, epoch)
         else:
             top1 = 0
