@@ -227,7 +227,7 @@ elif args.subset == "cifar10":
     args.classes = range(args.nclass)
     args.val_ipc = 1000
     args.input_size = 32
-    args.epochs = 1000
+    args.epochs = 400
 
 elif args.subset == "cifar100":
     args.nclass = 100
